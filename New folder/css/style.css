@@ -1,5 +1,6 @@
 body {
 	background-color: #f2f1ef;
+
 }
 /*container Div*/
 .wrapper {
@@ -12,64 +13,55 @@ grid-template-columns: repeat(12,1fr);
 .wrapper>div{
 	
 	padding: 1em;
-	grid-auto-rows: minmax(70px,auto);
-
-}
-
-/*top_navigation_ Column Span*/
-.topnavbar {
-	background: #34495e;
-	grid-column:6/13;
-	border-bottom: #e8491d 3px solid;
-
-}
-
-
-.topnavbar>ul {
-	margin: 0;
-	padding: 0;
 	
-}
-
-.topnavbar>nav>ul>li{
-	float: right;
-	display: inline;	
-	padding: 20px 20px 0px 20px;
-	
-}
-
-.topnavbar>nav>ul>li>a{
-	text-decoration: none;
-	color:#ffffff;
-
-	
-}
-.topnavbar>nav>ul>li>a:hover{
-	
-	color:#f9690e;
-
-	
+ 
 }
 
 .header {
-    grid-column:1/6;
+    grid-column:1/13;
 	background: #34495e;
 	border-bottom: #e8491d 3px solid;
+    max-height: 100px;
 }
 
-/*Header Logo Span*/
-.header>header>h3>span:nth-child(1) {
+.header>ul {
+    margin:0;
+	padding: 0;
+
+}
+
+.header>ul>li{
+	float: right;
+	display: inline;	
+	padding: 20px 20px 15px 20px;
+
+}
+
+.header>ul>li>a{
+	text-decoration: none;
+	color:#ffffff;
+	padding: 20px 20px 15px 20px;
+
 	
+}
+.header>ul>li>a:hover{
+	
+	color:#f9690e;
+}
+
+
+
+/*Header Logo Span*/
+.header>h1>span {
+	float: left;
 	color: #f9690e;
 	font-size: 50px;
 }
-
-.header>header>h3>span:nth-child(2) {
-	
-	color: #ffffff;
-	font-size: 30px;
-	
+.header>h1>span:hover{
+	text-shadow: 0 0 7px white;
 }
+
+
 
 #advertisement {
 	grid-column:1/13;
@@ -113,7 +105,6 @@ grid-template-columns: repeat(12,1fr);
 .catnavbar>nav>ul>li>a:hover {
 	
 	width: 110px;
-	
 	color:#f9690e;
 
 	
@@ -122,8 +113,8 @@ grid-template-columns: repeat(12,1fr);
 /*Hero Image*/
 .hero {
 	grid-column:1/13;
-	background:url("../images/iphone7.jpg")no-repeat;
-	max-height: 350px;
+	background:url("../images/sarath.jpg")no-repeat 0px -400px;
+	max-height: 400px;
 	
 	text-align: center;
 	color:#ffffff;
@@ -131,9 +122,8 @@ grid-template-columns: repeat(12,1fr);
 
 
 .hero>p{
-
 font-family: comic;
-margin: 300px;
+margin: 350px;
 color:#ffffff;
 font-size: 30px;
 
@@ -141,27 +131,20 @@ font-size: 30px;
 
 .newssection {
 	float: left;
-
-	grid-column:1/5;
-	
+	grid-column:2/5;	
     max-width: 350px;
 	
 }
-#heading {
+.heading {
 margin-top: 10px;
 }
 
 
-
 .newssectionnext{
-	margin-left: 10px;
+	margin-left: 80px;
 	float: left;
-
-	grid-column:5/9;
-	
-	max-width: 350px;
-
-	
+	grid-column:5/8;
+	max-width: 350px;	
 
 }
 
@@ -170,9 +153,9 @@ margin-top: 10px;
 }
 
 .topstories{
-	margin: 0;
+	margin-left: 120px;
 	padding: 0;
-    grid-column:9/13;
+    grid-column:8/13;
 }
 
 .topstories>ul>li {
@@ -181,11 +164,11 @@ margin-top: 10px;
 	font-family: comic;
 	font-size: 20px;
 	padding-top: 0;
-	padding-bottom: 5px;
+	
 	
 }
 .topstories>h3 {
-    margin: 0;
+    margin: 0px;
 
 
 }
@@ -193,25 +176,110 @@ margin-top: 10px;
 .business {
 	margin-left: 10px;
 	float: left;
-	grid-column:1/5;
+	grid-column:2/5;
 	
-	min-height: 300px;
+	
 	
 }
 
 .business2div{
-    margin-left: 10px;
+    margin-left: 80px;
 	float: left;
-	grid-column:5/9;
+	grid-column:5/8;
 	
-	min-height: 300px;
 }
 
 .business3div{
-    margin-left: 10px;
+    margin-left: 150px;
 	float: left;
-	grid-column:9/13;
+	grid-column:8/13;
 	max-width: 320px;
-	min-height: 300px;
+	
+
+}
+
+.science1div {
+	margin-left: 10px;
+	float: left;
+	grid-column:2/5;	
+    max-width: 320px;
+	
+}
+.science2div {
+
+	margin-left: 80px;
+	float: left;
+	grid-column:5/8;	
+    max-width: 320px;
+	
+}
+
+.science2div>h3>a {
+    text-decoration: none;
+}
+
+.science2div>h3>a:hover {
+    color: #f9690e; 
+}
+
+.science3div {
+	margin-left: 150px;
+	float: left;
+	grid-column:8/13;
+	max-width: 320px;	
+   	
+}
+
+.hover>h3:hover {
+	color:#f9690e;
+}
+
+
+.submit {
+	height: 38px;
+	background:#e8491d;
+	border: 0;
+	padding-left:20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.textbox{
+padding: 4px;
+height: 25px;
+width: 180px;
+}
+
+/*footer*/
+.footer {
+grid-column:1/13;
+display: grid;
+
+background:#e8491d;
+}
+
+
+.footer>footer>div {
+	float: left;
+    margin-left: 100px;	
+    grid-column:1/2;
+   
+}
+
+.footer>footer>div>img:hover {
+	opacity: 0.5;
+}
+
+.explore-list>ul{
+	margin: 0;
+	padding-right: 50px;
+
+}
+
+
+
+/*copyright-footer*/
+.copyright {
+color: #ffffff;
 }
 
